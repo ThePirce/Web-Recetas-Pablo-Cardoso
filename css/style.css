@@ -1,0 +1,140 @@
+* {
+  margin:0;
+  padding:0;
+}
+.box-header {
+  display:grid;
+  max-height: 100%;
+  max-width: 100%;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "titulo logo";
+}
+
+#logo {
+  position:static;
+  max-width: 100%;
+  max-height: 300px;
+  min-height: 250px;
+  min-width: 250px;
+  grid-area: logo;
+  }
+  #titulo{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 5%;
+    grid-area: titulo;
+  }
+
+  #nav-bar {
+    background-color: rgba(221, 175, 182, 0.972);
+
+  }
+  .container {
+    background-color:none;
+    max-height: 100%;
+    margin-top:10%;
+    margin-bottom: 0%;
+  }
+
+  #imagenBody{
+    max-height: 266px;
+    max-width: 95%;
+    margin-left: 2.5%;
+  }
+  .card {
+    max-height: 500px;
+    background-color: snow;
+  }
+#carouselImg {
+  max-height: 700px;
+}
+
+  .footer {
+    max-width: 100%;
+    max-height: 40px;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    border-top-color:rgba(221, 175, 182, 0.972) ;
+    border-top-style: double;
+    text-align: center;
+  
+  }
+  #logoFooter {
+    position: auto;
+    max-height: 35px;
+
+  }
+  
+/* media query */ 
+@media (max-width: 767.98px) { 
+  .box-header {
+    display:grid;
+    max-height: 100%;
+    max-width: 100%;
+    grid-template-rows: 30% 65%;
+    grid-template-areas: "logo"
+                         "titulo";
+  }
+  
+  #logo {
+    position:center;
+    margin-bottom: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 250px;
+    min-width: 250px;
+    grid-area: logo;
+    }
+    #titulo{
+      position: auto;
+      font-size: 100px;
+      text-align: center;
+      margin-top: 15%;
+      margin-left:15%;
+      grid-area: titulo;
+    }
+  
+    #nav-bar {
+      background-color: rgba(221, 175, 182, 0.972);
+  
+    }
+    .container {
+      background-color:none;
+      max-height: 100%;
+      margin-top:10%;
+      margin-bottom: 0%;
+    }
+  
+    #imagenBody{
+      max-height: 266px;
+      max-width: 95%;
+      margin-left: 2.5%;
+    }
+    .card {
+      max-height: 500px;
+      background-color: snow;
+    }
+  #carouselImg {
+    max-height: 700px;
+  }
+  
+    .footer {
+      max-width: 100%;
+      max-height: 40px;
+      margin-bottom: 0%;
+      margin-top: 5%;
+      border-top-color:rgba(221, 175, 182, 0.972) ;
+      border-top-style: double;
+      text-align: center;
+    
+    }
+    #logoFooter {
+      position: auto;
+      max-height: 35px;
+  
+    }
+
+}
